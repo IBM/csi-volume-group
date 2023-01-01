@@ -1,4 +1,4 @@
-module github.com/container-storage-interface/spec
+module github.com/IBM/csi-volume-group
 
 go 1.18
 
