@@ -1,6 +1,6 @@
 module github.com/IBM/csi-volume-group
 
-go 1.18
+go 1.17
 
 require (
 	github.com/golang/protobuf v1.3.2

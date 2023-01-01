@@ -83,7 +83,7 @@ export PATH := $(shell pwd):$(PATH)
 ##                              BUILD                                 ##
 ########################################################################
 CSI_PROTO := ../../csi.proto
-CSI_PKG_ROOT := github.com/IBM/csi-volume-group/blob/test_package_name
+CSI_PKG_ROOT := github.com/IBM/csi-volume-group
 CSI_PKG_SUB := $(shell cat $(CSI_PROTO) | sed -n -e 's/^package.\([^;]*\).v[0-9]\+;$$/\1/p'|tr '.' '/')
 CSI_BUILD := $(CSI_PKG_SUB)/.build
 CSI_GO := $(CSI_PKG_SUB)/csi.pb.go
