@@ -1,2 +1,4 @@
-# csi-volume-group
-CSI side car to support volume group objects in K8S
+# Container Storage Interface (CSI) Specification
+
+
+This project contains the CSI [specification](spec.md) and [protobuf](csi.proto) files.
