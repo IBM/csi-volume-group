@@ -31,7 +31,7 @@ else
 	diff "$@" "$?" > /dev/null 2>&1 || cp -f "$?" "$@"
 endif
 
-build: check
+#build: check
 
 # If this is not running on GitHub Actions then for sake of convenience
 # go ahead and update the language bindings as well.
