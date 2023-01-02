@@ -24,12 +24,12 @@ $(CSI_PROTO).tmp: $(CSI_SPEC) Makefile
 # will fail.
 #
 # Locally the temp file is simply copied over the real file.
-#$(CSI_PROTO): $(CSI_PROTO).tmp
-#ifeq (true,$(GITHUB_ACTIONS))
-#	diff "$@" "$?"
-#else
-#	diff "$@" "$?" > /dev/null 2>&1 || cp -f "$?" "$@"
-#endif
+$(CSI_PROTO): $(CSI_PROTO).tmp
+ifeq (true,$(GITHUB_ACTIONS))
+	diff "$@" "$?"
+else
+	diff "$@" "$?" > /dev/null 2>&1 || cp -f "$?" "$@"
+endif
 
 build: check
 
