@@ -1,5 +1,5 @@
 /protoc
 /protoc-gen-go
 /csi.a
-/volume_group.a
+/volumegroup.a
 /.protoc

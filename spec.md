@@ -8,14 +8,14 @@ This section describes the interface between COs and Plugins.
 
 ```protobuf
 syntax = "proto3";
-package volume_group;
+package volumegroup;
 
 import "google/protobuf/descriptor.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 import "github.com/container-storage-interface/spec/lib/go/csi/csi.proto";
 
-option go_package = "volume_group";
+option go_package = "volumegroup";
 
 service Controller {
   rpc CreateVolumeGroup(CreateVolumeGroupRequest)
