@@ -43,7 +43,6 @@ service Controller {
     option (csi.v1.alpha_method) = true;
   }
 }
-
 ```
 
 #### `CreateVolumeGroup`
@@ -118,7 +117,7 @@ message VolumeGroup {
   //   VolumeGroup is not empty.
   // - Response from ModifyVolumeGroupMembership if the
   //   VolumeGroup is not empty after modification.
-  repeated csi.v1.Volume volumes = 3;
+  repeated Volume volumes = 3;
 }
 ```
 
