@@ -1,11 +1,11 @@
 all: build
 
 CSI_SPEC := spec.md
-CSI_PROTO := csi.proto
+CSI_PROTO := volume_group.proto
 ## Build go language bindings
-CSI_A := csi.a
-CSI_GO := lib/go/csi/csi.pb.go
-CSI_PKG := lib/go/csi
+CSI_A := volume_group.a
+CSI_GO := lib/go/volume_group/volume_group.pb.go
+CSI_PKG := lib/go/volume_group
 
 # This is the target for building the temporary CSI protobuf file.
 #
@@ -45,7 +45,7 @@ build_cpp:
 
 # The file exists, but could be out-of-date.
 $(CSI_GO): $(CSI_PROTO)
-	$(MAKE) -C lib/go csi/csi.pb.go
+	$(MAKE) -C lib/go volume_group/volume_group.pb.go
 
 $(CSI_A): $(CSI_GO)
 	go mod download
