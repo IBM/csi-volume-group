@@ -11,7 +11,7 @@ option go_package = "volumegroup";
 extend google.protobuf.FieldOptions {
   // Indicates that a field MAY contain information that is sensitive
   // and MUST be treated as such (e.g. not logged).
-  bool vg_csi_secret = 1059;
+  bool vg_csi_secret = 1101;
 
   // Indicates that this field is OPTIONAL and part of an experimental
   // API that may be deprecated and eventually removed between minor
