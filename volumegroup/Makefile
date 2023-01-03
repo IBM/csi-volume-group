@@ -13,7 +13,7 @@
 # limitations under the License.
 
 PROTO := volumegroup.proto
-PROTO_SOURCE := spec.md
+PROTO_SOURCE := volumegroup.md
 
 all: install-deps $(PROTO) build
 
