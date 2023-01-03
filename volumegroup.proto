@@ -14,19 +14,19 @@ extend google.protobuf.FieldOptions {
   // Indicates that this field is OPTIONAL and part of an experimental
   // API that may be deprecated and eventually removed between minor
   // releases.
-  bool vg_alpha_field = 1061;
+  bool vg_alpha_field = 1102;
 }
 extend google.protobuf.MessageOptions {
   // Indicates that this message is OPTIONAL and part of an experimental
   // API that may be deprecated and eventually removed between minor
   // releases.
-  bool vg_alpha_message = 1061;
+  bool vg_alpha_message = 1102;
 }
 extend google.protobuf.MethodOptions {
   // Indicates that this method is OPTIONAL and part of an experimental
   // API that may be deprecated and eventually removed between minor
   // releases.
-  bool alpha_method = 1061;
+  bool alpha_method = 1102;
 }
 
 service Controller {
