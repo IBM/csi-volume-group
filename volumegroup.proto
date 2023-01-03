@@ -10,11 +10,6 @@ extend google.protobuf.FieldOptions {
   // Indicates that a field MAY contain information that is sensitive
   // and MUST be treated as such (e.g. not logged).
   bool vg_csi_secret = 1101;
-
-  // Indicates that this field is OPTIONAL and part of an experimental
-  // API that may be deprecated and eventually removed between minor
-  // releases.
-  bool vg_alpha_field = 1102;
 }
 extend google.protobuf.MessageOptions {
   // Indicates that this message is OPTIONAL and part of an experimental
@@ -26,36 +21,35 @@ extend google.protobuf.MethodOptions {
   // Indicates that this method is OPTIONAL and part of an experimental
   // API that may be deprecated and eventually removed between minor
   // releases.
-  bool alpha_method = 1102;
+  bool vg_alpha_method = 1102;
 }
 
 service Controller {
   rpc CreateVolumeGroup(CreateVolumeGroupRequest)
       returns (CreateVolumeGroupResponse) {
-    option (alpha_method) = true;
+    option (vg_alpha_method) = true;
   }
 
   rpc ModifyVolumeGroupMembership(ModifyVolumeGroupMembershipRequest)
       returns (ModifyVolumeGroupMembershipResponse) {
-    option (alpha_method) = true;
+    option (vg_alpha_method) = true;
   }
 
   rpc DeleteVolumeGroup(DeleteVolumeGroupRequest)
       returns (DeleteVolumeGroupResponse) {
-    option (alpha_method) = true;
+    option (vg_alpha_method) = true;
   }
 
   rpc ListVolumeGroups(ListVolumeGroupsRequest)
       returns (ListVolumeGroupsResponse) {
-    option (alpha_method) = true;
+    option (vg_alpha_method) = true;
   }
 
   rpc ControllerGetVolumeGroup(ControllerGetVolumeGroupRequest)
       returns (ControllerGetVolumeGroupResponse) {
-    option (alpha_method) = true;
+    option (vg_alpha_method) = true;
   }
 }
-
 message CreateVolumeGroupRequest {
   option (vg_alpha_message) = true;
 
@@ -104,8 +98,6 @@ message VolumeGroup {
   //   VolumeGroup is not empty after modification.
   repeated VgVolume volumes = 3;
 }
-
-
 
 // Information about a specific volume.
 message VgVolume {
