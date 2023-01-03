@@ -82,7 +82,7 @@ message VolumeGroup {
   //   VolumeGroup is not empty.
   // - Response from ModifyVolumeGroupMembership if the
   //   VolumeGroup is not empty after modification.
-  repeated Volume volumes = 3;
+  repeated csi.Volume volumes = 3;
 }
 message DeleteVolumeGroupRequest {
   option (csi.v1.alpha_message) = true;
