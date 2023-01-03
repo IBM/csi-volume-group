@@ -12,7 +12,7 @@ package volumegroup;
 
 import "google/protobuf/descriptor.proto";
 
-option go_package = "volumegroup";
+option go_package = ".;volumegroup";
 
 extend google.protobuf.FieldOptions {
   // Indicates that a field MAY contain information that is sensitive
