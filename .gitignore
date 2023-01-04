@@ -1,5 +1,9 @@
-*.tmp
 .DS_Store
 .build
-csi.a
+volumegroup.a
 *.swp
+bin
+dist
+github.com
+google
+*.tmp
