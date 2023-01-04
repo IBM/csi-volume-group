@@ -1,0 +1,9 @@
+.DS_Store
+.build
+volumegroup.a
+*.swp
+bin
+dist
+github.com
+google
+*.tmp
