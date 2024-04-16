@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi7/go-toolset:1.16.12
+FROM registry.access.redhat.com/ubi7/go-toolset:1.19.13
 
 COPY . .
 
