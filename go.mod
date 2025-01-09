@@ -3,8 +3,9 @@ module github.com/IBM/csi-volume-group
 go 1.19
 
 require (
-	github.com/golang/protobuf v1.3.2
+	github.com/golang/protobuf v1.5.4
 	google.golang.org/grpc v1.26.0
+	google.golang.org/protobuf v1.33.0
 )
 
 require (
