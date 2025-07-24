@@ -14,8 +14,8 @@
 
 SHELL:=/bin/bash
 
-PROTOC_VERSION := 29.3
-PROTOC_GEN_GO_VERSION := 1.36.5
+PROTOC_VERSION := 31.1
+PROTOC_GEN_GO_VERSION := 1.36.6
 PROTOC_GEN_GO_GRPC_VERSION := 1.5.1
 
 PROTOC_FOUND := $(shell ../bin/protoc --version 2> /dev/null)
