@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/container-storage-interface/spec v1.12.0
 	google.golang.org/grpc v1.79.3
-	google.golang.org/protobuf v1.36.10
+	google.golang.org/protobuf v1.36.11
 )
 
 require (
