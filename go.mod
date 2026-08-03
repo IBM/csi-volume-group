@@ -1,8 +1,6 @@
 module github.com/IBM/csi-volume-group
 
-go 1.24.0
-
-toolchain go1.24.1
+go 1.25.0
 
 require (
 	github.com/container-storage-interface/spec v1.12.0
